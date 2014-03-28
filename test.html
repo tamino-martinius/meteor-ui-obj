@@ -5,10 +5,10 @@
   {{#with $obj "one" 1 "two" 2}}
     {{test2 .}}
   {{/with}}
-  {{#with $obj "one" 1 "undef" undefined}}
+  {{#with $obj "one" 1}}
     {{test3 .}}
   {{/with}}
-  {{#with $obj "undef" undefined "undef" undefined}}
+  {{#with $obj}}
     {{test4 .}}
   {{/with}}
   {{#with $obj "one" 1 null "two" 2}}

@@ -16,7 +16,7 @@ Package.on_test(function (api) {
   api.use([
     'coffeescript',
     'standard-app-packages',
-    'handlebars-obj',
+    'ui-obj',
     'test-helpers',
     'tinytest'
   ], 'client');

@@ -1,0 +1,20 @@
+{
+  "meteor": {},
+  "dependencies": {
+    "basePackages": {
+      "ui-obj": {
+        "path": "."
+      }
+    },
+    "packages": {
+      "ui-obj": {
+        "path": "."
+      },
+      "obj": {
+        "git": "https://github.com/awwx/meteor-obj.git",
+        "tag": "v1.0.0",
+        "commit": "d7be466c3e17230a7f8467e605f44e8cf99cf526"
+      }
+    }
+  }
+}

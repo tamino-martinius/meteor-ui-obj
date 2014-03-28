@@ -2,8 +2,8 @@ omitHash = (val) ->
   delete val.hash
   val
 
-Tinytest.add "handlebars_obj", (test) ->
-  Template["handlebars_obj_tests"].helpers
+Tinytest.add "ui_obj", (test) ->
+  Template["ui_obj_tests"].helpers
     "test1": (val) -> test.equal(omitHash(val), {})
     "test2": (val) -> test.equal(omitHash(val), {one: 1, two: 2})
     "test3": (val) -> test.equal(omitHash(val), {one: 1})
@@ -20,4 +20,4 @@ Tinytest.add "handlebars_obj", (test) ->
     "test10_obj2": -> {one: 1}
     "test10": (val)-> test.equal(omitHash(val), {one: 1})
 
-  UI.render Template["handlebars_obj_tests"]
+  UI.render Template["ui_obj_tests"]
