@@ -1,1 +1,1 @@
-Handlebars.registerHelper "$obj", (items...) -> obj.apply @, arguments
+UI.registerHelper "$obj", (items...) -> obj.apply @, arguments

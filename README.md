@@ -1,7 +1,7 @@
-# handlebars-obj
-[![Build Status](https://travis-ci.org/Zaku-eu/meteor-handlebars-obj.png?branch=master)](https://travis-ci.org/Zaku-eu/meteor-handlebars-obj)
+# ui-obj
+[![Build Status](https://travis-ci.org/Zaku-eu/meteor-ui-obj.png?branch=master)](https://travis-ci.org/Zaku-eu/meteor-ui-obj)
 
-Easily create plain objects with computed keys as Handlebars helper.
+Easily create plain objects with computed keys as meteor ui helper.
 
 Useful to set the context of the current scope e.g. for `iron-router` paths.
 

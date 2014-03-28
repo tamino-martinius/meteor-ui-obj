@@ -1,12 +1,12 @@
 Package.describe({
-    summary: 'Easily create plain objects with computed keys as Handlebars helper.'
+    summary: 'Easily create plain objects with computed keys as meteor ui helper.'
 });
  
 Package.on_use(function (api) {
   api.use([
     'obj',
     'coffeescript',
-    'handlebars'
+    'standard-app-packages'
   ],'client');
  
   api.add_files('client.coffee', 'client');
@@ -15,8 +15,8 @@ Package.on_use(function (api) {
 Package.on_test(function (api) {
   api.use([
     'coffeescript',
+    'standard-app-packages',
     'handlebars-obj',
-    'templating',
     'test-helpers',
     'tinytest'
   ], 'client');
