@@ -1,0 +1,35 @@
+<template name="handlebars-obj-tests">
+  {{#with $obj}}
+    {{test1 .}}
+  {{/with}}
+  {{#with $obj "one" 1 "two" 2}}
+    {{test2 .}}
+  {{/with}}
+  {{#with $obj "one" 1 "undef" undefined}}
+    {{test3 .}}
+  {{/with}}
+  {{#with $obj "undef" undefined "undef" undefined}}
+    {{test4 .}}
+  {{/with}}
+  {{#with $obj "one" 1 null "two" 2}}
+    {{test5 .}}
+  {{/with}}
+  {{#with $obj "one" 1 undefined "two" 2}}
+    {{test6 .}}
+  {{/with}}
+  {{#with $obj test7-obj}}
+    {{test7 .}}
+  {{/with}}
+  {{#with $obj test8-obj}}
+    {{test8 .}}
+  {{/with}}
+  {{#with $obj "one" 1 test9-obj "four" 4}}
+    {{test9 .}}
+  {{/with}}
+  {{#with $obj test10-obj1 "one" 8 test10-obj2}}
+    {{test10 .}}
+  {{/with}}
+</template>
+<template name="handlebars-obj-test11">
+  {{$obj "one"}}
+</template>
