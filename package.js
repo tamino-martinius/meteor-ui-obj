@@ -1,29 +1,27 @@
 Package.describe({
-  name: 'zaku:ui-obj',
-  summary: 'Easily create plain objects with computed keys as meteor ui helper.',
-  version: '0.9.0',
-  git: 'https://github.com/Zaku-eu/meteor-ui-obj.git'
+    summary: 'Easily create plain objects with computed keys as meteor ui helper.'
 });
-
-Package.onUse(function(api) {
-  api.versionsFrom('METEOR@0.9.0');
+ 
+Package.on_use(function (api) {
   api.use([
-    'mrt:obj@1.0.0',
+    'obj',
     'coffeescript',
     'standard-app-packages'
   ],'client');
-  api.addFiles('zaku:ui-obj.coffee');
+ 
+  api.add_files('client.coffee', 'client');
 });
 
-Package.onTest(function(api) {
+Package.on_test(function (api) {
   api.use([
     'coffeescript',
     'standard-app-packages',
-    'zaku:ui-obj',
+    'ui-obj',
+    'test-helpers',
     'tinytest'
   ], 'client');
   api.add_files([
-    'zaku:ui-obj-tests.html',
-    'zaku:ui-obj-tests.coffee'
+    'test.html',
+    'test.coffee'
   ], 'client');
 });
