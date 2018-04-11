@@ -9,7 +9,7 @@ Package.onUse(function(api) {
   api.versionsFrom('METEOR@0.9.0');
   api.use([
     'mrt:obj@1.0.0',
-    'coffeescript',
+    'coffeescript@1.0.17',
     'standard-app-packages'
   ],'client');
   api.addFiles('zaku:ui-obj.coffee');
