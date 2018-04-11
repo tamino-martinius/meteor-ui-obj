@@ -1,7 +1,7 @@
 Package.describe({
   name: 'zaku:ui-obj',
   summary: 'Easily create plain objects with computed keys as meteor ui helper.',
-  version: '0.9.0',
+  version: '0.9.1',
   git: 'https://github.com/Zaku-eu/meteor-ui-obj.git'
 });
 
