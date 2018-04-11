@@ -12,7 +12,9 @@ Package.onUse(function(api) {
     'coffeescript@1.0.17',
     'standard-app-packages'
   ],'client');
-  api.addFiles('zaku:ui-obj.coffee');
+  api.addFiles([
+    'zaku:ui-obj.coffee',
+  ], 'client');
 });
 
 Package.onTest(function(api) {
